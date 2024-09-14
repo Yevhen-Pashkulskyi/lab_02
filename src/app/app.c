@@ -3,6 +3,6 @@
 
 int main()
 {
-    display();
+    run();
     return 0;
 }

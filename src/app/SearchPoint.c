@@ -2,17 +2,19 @@
 #include <math.h>
 #include <stdlib.h>
 
-void display() {
+void run() {
     // Об'явленні змінних типу float та integer
     float diam, radius, dis;
     float x, y, point;
     int rate = 2;
 
     // Введення даних користувачем
-    printf("Enter diametr: ");
+    printf("\nEnter diametr: ");
     scanf("%f", &diam);
-    printf("Enter \'x\' and \'y\' coordinates separated by space: ");
-    scanf("%f%f", &x, &y);
+    printf("Enter \'x\': ");
+    scanf("%f", &x);
+    printf("Enter \'y\': ");
+    scanf("%f", &y);
 
     // Розрахунок радіуса, сторони квадрата та розрахунок крапки за величиною
     radius = diam / 2;
@@ -31,4 +33,5 @@ void display() {
     } else {
         printf("Point outside the figures");
     }
+    run();
 }
