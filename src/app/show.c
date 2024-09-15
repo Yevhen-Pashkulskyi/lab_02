@@ -1,3 +1,0 @@
-void show_menu() {
-
-}

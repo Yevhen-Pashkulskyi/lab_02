@@ -2,14 +2,13 @@
 #include <math.h>
 #include <stdlib.h>
 
-#include "funcs.h"
+#include "../funcs.h"
 
-void run() {
-    // Об'явленні змінних типу float та integer
+void search_point() {
     float diam, radius, dis;
     float x, y, point;
     int rate = 2;
-    show_menu();
+    // Об'явленні змінних типу float та integer
     // Введення даних користувачем
     printf("Enter diametr: ");
     scanf("%f", &diam);
@@ -35,6 +34,28 @@ void run() {
     } else {
         printf("Point outside the figures");
     }
-    printf("\n");
-    run();
+}
+
+void choice_menu(int *choice) {
+    switch (*choice) {
+        case 1:
+            search_point();
+            printf("\n");
+            run();
+            break;
+        case 0:
+            printf("Exit program");
+            break;
+        default:
+            printf("Invalid choice\n");
+            run();
+    }
+}
+
+void run() {
+    show_menu();
+    printf("Make a choice: ");
+    int choice;
+    scanf("%d", &choice);
+    choice_menu(&choice);
 }

@@ -1,8 +1,6 @@
-#include <stdio.h>
 #include "funcs.h"
 
-int main()
-{
+int main() {
     run();
     return 0;
 }
