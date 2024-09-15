@@ -3,4 +3,6 @@
 
 void run();
 
+void show_menu();
+
 #endif

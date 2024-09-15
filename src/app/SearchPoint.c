@@ -2,12 +2,14 @@
 #include <math.h>
 #include <stdlib.h>
 
+#include "funcs.h"
+
 void run() {
     // Об'явленні змінних типу float та integer
     float diam, radius, dis;
     float x, y, point;
     int rate = 2;
-
+    show_menu();
     // Введення даних користувачем
     printf("Enter diametr: ");
     scanf("%f", &diam);
