@@ -9,7 +9,7 @@ void run() {
     int rate = 2;
 
     // Введення даних користувачем
-    printf("\nEnter diametr: ");
+    printf("Enter diametr: ");
     scanf("%f", &diam);
     printf("Enter \'x\': ");
     scanf("%f", &x);
@@ -33,5 +33,6 @@ void run() {
     } else {
         printf("Point outside the figures");
     }
+    printf("\n");
     run();
 }
