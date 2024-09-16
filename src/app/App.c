@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include "interface.h"
 
 int main() {
     run();

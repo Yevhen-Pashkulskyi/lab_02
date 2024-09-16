@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
 
-#include "../funcs.h"
+#include "../interface.h"
 
 void search_point() {
     float diam, radius, dis;
@@ -23,10 +22,10 @@ void search_point() {
     point = sqrt(pow(x, rate) + pow(y, rate));
 
     // умова для визначееня в якій площіні знаходеться крапка
-    if (abs(x) <= dis && abs(y) <= dis) {
-        if (x < 0 && y > 0 && abs(point) >= radius) {
+    if (fabs(x) <= dis && fabs(y) <= dis) {
+        if (x < 0 && y > 0 && fabs(point) >= radius) {
             printf("The point is in area \"A\"");
-        } else if (x > 0 && y > 0 && abs(point) >= radius) {
+        } else if (x > 0 && y > 0 && fabs(point) >= radius) {
             printf("The point is in area \"B\"");
         } else {
             printf("The point is not in region \"A\" and \"B\"");
@@ -44,18 +43,19 @@ void choice_menu(int *choice) {
             run();
             break;
         case 0:
-            printf("Exit program");
+            printf("Exit program.");
             break;
         default:
-            printf("Invalid choice\n");
+            printf("Invalid choice!\n");
             run();
     }
 }
 
-void run() {
+int run() {
     show_menu();
     printf("Make a choice: ");
     int choice;
     scanf("%d", &choice);
     choice_menu(&choice);
+    return choice;
 }
