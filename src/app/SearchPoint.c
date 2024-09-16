@@ -2,8 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main()
-{
+int main() {
     // Об'явленні змінних типу float та integer
     float diam, radius, dis;
     float x, y, point;
@@ -21,23 +20,15 @@ int main()
     point = sqrt(pow(x, rate) + pow(y, rate));
 
     // умова для визначееня в якій площіні знаходеться крапка
-    if (abs(x) <= dis && abs(y) <= dis)
-    {
-        if (x < 0 && y > 0 && abs(point) >= radius)
-        {
+    if (fabs(x) <= dis && fabs(y) <= dis) {
+        if (x < 0 && y > 0 && fabs(point) >= radius) {
             printf("The point is in area \"A\"");
-        }
-        else if (x > 0 && y > 0 && abs(point) >= radius)
-        {
+        } else if (x > 0 && y > 0 && fabs(point) >= radius) {
             printf("The point is in area \"B\"");
-        }
-        else
-        {
+        } else {
             printf("The point is not in region \"A\" and \"B\"");
         }
-    }
-    else
-    {
+    } else {
         printf("Point outside the figures");
     }
     return 0;
