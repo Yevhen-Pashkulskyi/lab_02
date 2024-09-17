@@ -1,4 +1,4 @@
-//Pashkulskyi Yevhen
+//Pashkulskyi Yevhen AS-246
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
