@@ -1,3 +1,4 @@
+//Pashkulskyi Yevhen
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -9,9 +10,9 @@ int main() {
     int rate = 2;
 
     // Введення даних користувачем
-    printf("Enter diametr: ");
+    printf("Input diametr: ");
     scanf("%f", &diam);
-    printf("Enter \'x\' and \'y\' coordinates separated by space: ");
+    printf("Input \'x\' and \'y\' coordinates separated by space: ");
     scanf("%f%f", &x, &y);
 
     // Розрахунок радіуса, сторони квадрата та розрахунок крапки за величиною
