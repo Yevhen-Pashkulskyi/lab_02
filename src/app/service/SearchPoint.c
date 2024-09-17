@@ -7,11 +7,11 @@ void search_point() {
     int rate = 2;
     // Об'явленні змінних типу float та integer
     // Введення даних користувачем
-    printf("Enter diametr: ");
+    printf("Input diametr: ");
     scanf("%f", &diam);
-    printf("Enter \'x\': ");
+    printf("Input \'x\': ");
     scanf("%f", &x);
-    printf("Enter \'y\': ");
+    printf("Input \'y\': ");
     scanf("%f", &y);
 
     // Розрахунок радіуса, сторони квадрата та розрахунок крапки за величиною
